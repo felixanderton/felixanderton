@@ -10,6 +10,11 @@ AI Engineer. Previously AI student at King's College London. I like building thi
 PPO agent for dynamic capital allocation across 5 US sector ETFs. The interesting part is the reward function: instead of raw returns or a sparse terminal Sharpe, it uses the **Differential Sharpe Ratio** (Moody & Saffell, 1998) — a dense, differentiable approximation that gives a risk-adjusted gradient at every timestep via EMA accumulators. Includes a full ablation study, written falsification criteria, ClearML experiment tracking, and post-hoc statistical analysis of results.
  
 `PPO` `Differential Sharpe` `Gymnasium` `ClearML` `Modal` `Docker`
+
+### [running-ai](https://github.com/felixanderton/running-ai)
+An AI running coach you talk to in Claude: it designs your training program, pushes structured workouts to your **Garmin**, and analyses each completed run to adjust the plan — with a Google Sheet as the living program plus a performance dashboard. The interesting part is the architecture: **Claude** is the reasoning layer, and the whole thing ships as a remote MCP server on Cloud Run that Claude connects to as an OAuth-secured custom connector** — the server is pure plumbing (Garmin + Sheets tools), so all the coaching logic lives in the conversation, not in code. It translates natural-language sessions into Garmin's workout DTO schema with real on-watch **pace targets**, and works around the absence of an official Garmin API via the community library + a one-time MFA token bootstrap.
+
+  `MCP` `FastMCP` `Claude` `Cloud Run` `Google Sheets`
  
 ---
  
