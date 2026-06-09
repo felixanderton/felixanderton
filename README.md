@@ -1,6 +1,7 @@
 # Felix Anderton
  
 AI Engineer. Previously AI student at King's College London. I like building things.
+
 ---
  
 ## Featured project
