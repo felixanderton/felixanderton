@@ -1,7 +1,6 @@
 # Felix Anderton
  
-AI Engineer. Previously AI student at King's College London. I like building things that sit at the intersection of ML and hard quantitative problems — mainly finance and NLP.
- 
+AI Engineer. Previously AI student at King's College London. I like building things.
 ---
  
 ## Featured project
